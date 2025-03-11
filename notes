@@ -1,0 +1,28 @@
+Things to allow user configuration for in environment:
+- pscheduler jobs to run at startup
+   - job 1: traceroute to specific server
+   - job 2: ping known address (1.1.1.1/8.8.8.8?)
+   - job 3: ping known url (google.com?)
+   - job 4: ping RAN
+   - job 5: ping first hop
+   - job 6: ping known server
+   - job 7: bandwidth to specific server
+- allow configuration of archive remote address
+- allow configuration of remote address to ship other analytics to
+- write a script to ship remote analytics for the pi
+- look up each of the analytics we want to ship
+   - vcgencmd measure_temp
+   - vcgencmd measure_volts
+   - vcgencmd measure_clock
+   - command to get battery voltage measurement
+   - command to get installed hats
+      - ls /proc/device-tree/hat
+   - command to get wireless/cellular signal strength
+   - relative humidity?
+      - requires a specific sensor DHT11/DHT22
+   - GPS Position?
+      - there are circuits for this: GY-NEO6MV2
+      - requires some amount of time to fix position
+      - are we willing to wait (consumes power)?
+   - External Temperature (thermocouple?)
+      - analog measurement, possible. Desirable?
