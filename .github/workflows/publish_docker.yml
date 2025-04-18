@@ -14,7 +14,7 @@ on:
 env:
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
-  IMAGE_BASE: 'jkafader-esnet/wireless-telemetry-perfsonar'
+  IMAGE_BASE: 'esnet/wireless-telemetry-perfsonar'
   BUILD_DIR: .
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
