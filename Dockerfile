@@ -29,7 +29,7 @@ ENV PERFSONAR_ARCHIVE_AUTHORIZATION "Bearer th1sIS4ls0T0t4l1yS3cr3t3xc3ptFr0m133
 COPY requirements.txt /
 
 RUN apt update
-RUN apt install python3.10-venv
+RUN apt install -y python3.10-venv
 RUN python3 -m venv /wireless_telemetry_venv && /wireless_telemetry_venv/bin/pip install -r /requirements.txt
 
 COPY wireless_telemetry.py /
